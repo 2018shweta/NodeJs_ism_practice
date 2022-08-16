@@ -46,3 +46,5 @@ app.put("/updateRole",roleController.updatRole)
 //user url
 
 app.post("/addUser",userController.addUser)
+app.get("/allUsers",userController.allUsers)
+app.get("/getUserByUserId/:userId",userController.findUserById)
