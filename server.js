@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 // entry contreoller
 var sessionController=require("./controller/sessionController")
 const roleController = require("./controller/roleController")
-
+const userController=require("./controller/userController")
 
 var app=express()
 
@@ -42,3 +42,7 @@ app.get("/allRole",roleController.allRole)
 app.get("/getRoleByRoleId/:roleId",roleController.findroleById)
 app.delete("/deleteRole/:roleId",roleController.deleteByRoleId)
 app.put("/updateRole",roleController.updatRole)
+
+//user url
+
+app.post("/addUser",userController.addUser)
