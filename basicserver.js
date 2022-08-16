@@ -12,7 +12,7 @@ if(req.url=="/signup"){
 }else if(req.url=="/favicon.ico"){
     res.write("differnt");
 }
-
+  
     res.write("hyyy");
-    res.end();
+    res.end();      
 }).listen(9898)
