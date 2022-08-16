@@ -40,3 +40,5 @@ mongoose.connect(dbUrl,function(err){
 app.post("/role",roleController.addRole)
 app.get("/allRole",roleController.allRole)
 app.get("/getRoleByRoleId/:roleId",roleController.findroleById)
+app.delete("/deleteRole/:roleId",roleController.deleteByRoleId)
+app.put("/updateRole",roleController.updatRole)
